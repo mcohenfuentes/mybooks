@@ -8,5 +8,15 @@
   <body>
     <%- include('../partials/_navbar.ejs') %> 
     <h1>Your Books</h1>
+    <a href="/users/<%=user._id%>/books/new">Add a Book</a>
+    <ul>
+        <% books.forEach((book)=>{ %>
+        <li>
+          <a href="/users/<%= user._id %>/books/<%= book._id %>">
+            <%= book.title %> 
+          </a>
+        </li>
+        <% }) %>
+      </ul>
   </body>
 </html>

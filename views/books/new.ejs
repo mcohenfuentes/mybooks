@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a New Book</title>
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Add a New Book</h1>
+    <form action="/users/<%= user._id %>/books" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" />
+      
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes"></textarea>
+      
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+          <option value="loved">Loved</option>
+          <option value="disliked">Disliked</option>
+          <option value="neutral">Neutral</option>
+          <option value="confused">Confused</option>
+        </select>
+        <button type="submit">Add Book</button>
+      </form>
+  </body>
+</html>
