@@ -1,2 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #9ac2ef;
+    margin: 0; /* Removes default body margin */
+    overflow: hidden; /* Prevents scrolling */
+}
+
+  /* public/stylesheets/style.css */
+
+.index-body {
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/21/15/54/books-5937716_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main-header {
+    font-weight: bold;
+    color: white;
+    font-size: 100px;
+    margin: 0;  
+    top: 10%;
+    position: static;
+    line-height: 1;              
+}
+  
+.subheader {
+    margin: 10px 0 0 0;       /* Small margin above the subheader */
+    font-size: 50px;
+    line-height: 1.2;
+}
+  
+  .index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    margin-top: -300px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Center horizontally */
+    justify-content: center;
+    gap: 15px;  /* Center vertically */
+}
+  
+.auth-links {
+    display: flex;
+    flex-direction: row;  /* Horizontal alignment */
+    justify-content: center;
+    gap: 20px;  /* Space between buttons */
+    margin-top: 10px; 
+    align-items: center; 
+}
+  
+.signup-link,
+.signin-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 150px; /* Fixed width for consistent button size */
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    display: inline-block;
+}
+  
+  .signup-link {
+    background-color: rgb(3, 3, 103);
+    color: white;
+    margin: 20 0 0px 0;
+  }
+  
+  .signup-link:hover {
+    background-color: lightskyblue;
+  }
+  
+  .signin-link {
+    background-color: rgb(171, 9, 9);
+    color: white;
+    margin: 1px 0 0 0;
+  }
+  
+  .signin-link:hover {
+    background-color: darkorange;
+  }
+  
+  .signin-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #1c2e5b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20em;
+  height: 50%;
+  background-color: #f6e7e7;
+  padding: 30px 40px 20px 40px;
+  border-radius: 20px;
+  color: #4b598e;
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid rgb(182, 182, 182);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ce4866;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  margin: 15px 0;
+  font-size: 1.1em;
+}

@@ -6,19 +6,16 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
   <title>Home Page</title>
 </head>
-<body>
-  <%- include('./partials/_navbar.ejs') %> 
-  <% if (user) { %>
-    <h1>Welcome to your books <%= user.username %>!</h1>
-    <p>
-      <a href="/auth/sign-out">Sign out</a>
-    </p>
-  <% } else { %>
-    <h1>Welcome to a book place</h1>
-    <p>
-      <a href="/auth/sign-up">Sign up</a> or
-      <a href="/auth/sign-in">Sign in</a>.
-    </p>
-  <% } %>
+<body class="index-body"> 
+  <div class="index-container">
+    <div class="text-container">
+      <h1 class="main-header">Welcome to a Book Place</h1>
+    <h2 class="subheader">A place for all your book thoughts</h2>
+  </div>
+  <div class="auth-links">
+      <a class="signup-link" href="/auth/sign-up">Sign Up</a> 
+      <a class="signin-link" href="/auth/sign-in">Sign In</a>
+  </div>
+</div>
 </body>
 </html>
