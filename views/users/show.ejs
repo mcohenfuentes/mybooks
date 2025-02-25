@@ -12,7 +12,9 @@
     <% if (books && books.length > 0) { %>
         <ul>
             <% books.forEach(book => { %>
-                <li><%= book.title %></li>  
+                <li>
+                    <a href="/users/<%=user.id%>/books/community/<%=user.id%>/<%=book.id%>"><%= book.title %></a>
+                </li> 
             <% }) %>
         </ul>
     <% } else { %>

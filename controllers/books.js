@@ -108,4 +108,25 @@ router.get('/', async (req, res) => {
     }
   });
 
+//'/users/:userId/books/community/:userId/:bookId'
+  router.get('/community/:userId/:bookId', async (req, res) => {
+    try {
+        console.log(req.params)
+      const communityUser = await User.findById(req.params.userId);
+      console.log(communityUser)
+      const book = communityUser.books.id(req.params.bookId);
+      console.log(book)
+      
+      
+      res.render('books/comShow.ejs', {
+        book: book,
+      });
+    } catch (error) {
+      
+      console.log(error);
+      res.redirect('/');
+    }
+  });
+  
+
 module.exports = router;

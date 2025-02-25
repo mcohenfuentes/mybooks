@@ -13,11 +13,11 @@ router.get('/', async (req, res) => {
     }
 });
 
-
+//'/users/:userId/users/:userId'
 router.get('/:userId', async (req, res) => {
     try {
         const user = await User.findById(req.params.userId);
-
+        console.log(user)
         res.render('users/show.ejs', { user, books: user.books }); // Pass user data to show.ejs
     } catch (error) {
         console.log(error);
