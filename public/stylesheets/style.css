@@ -100,6 +100,7 @@ body {
     background-color: darkorange;
   }
   
+  /* sign in and sign up styling */
   .signin-container,
 .signup-container {
   display: flex;
@@ -142,3 +143,92 @@ button {
   margin: 15px 0;
   font-size: 1.1em;
 }
+
+/* /styling for books/index  */
+
+.all-books-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .all-books-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+  }
+  
+  .add-book-link {
+    padding: 10px;
+    background-color: #ce4866;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1em;
+    padding: 2px 25px;
+    text-decoration: none;
+  }
+  
+  .add-book-link:hover {
+    background-color: #e84a6c;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #1c2e5b;
+    width: 50%;
+    background-color: #f6e7e7;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+    display: block; /* Makes <a> take full width */
+  }
+
+  ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;       /* Removes default padding */
+    margin: 0;        /* Removes default margin */
+  }
+  
+
+ul li a:hover {
+    background-color: #4b598e;
+    color: white;
+  }
+
+  .new-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .new-body > form,
+  .edit-body > form {
+    height: 70%;
+  }
+  
+  textarea,
+  select {
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  select {
+    margin-bottom: 10px;
+  }
+  
+  .edit-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }

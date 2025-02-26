@@ -9,6 +9,7 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Add a New Book</h1>
+    <div class="new-body">
     <form action="/users/<%= user._id %>/books" method="POST">
         <label for="title">Title:</label>
         <input type="text" name="title" id="title" />
@@ -25,5 +26,6 @@
         </select>
         <button type="submit">Add Book</button>
       </form>
+    </div>
   </body>
 </html>

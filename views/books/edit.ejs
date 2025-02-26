@@ -12,6 +12,7 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
         <h1>Edit <%= book.title %></h1>
+        <div class="edit-body">
         <form action="/users/<%= user._id %>/books/<%= book._id %>?_method=PUT"
     method="POST">
             <label for="title">Title:</label>
@@ -41,6 +42,7 @@
             </select>
             <button type="submit">Update Book</button>
         </form>
+    </div>
 </body>
 
 </html>
