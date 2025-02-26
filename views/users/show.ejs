@@ -8,6 +8,7 @@
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
+    <div class="user-books">
     <h1><%= user.username %>'s Books</h1>
 
     <% if (books && books.length > 0) { %>
@@ -22,5 +23,6 @@
         <p>No Books </p>
     <% } %>
     <a href="/">Back to My Books</a>
+</div>
   </body>
 </html>

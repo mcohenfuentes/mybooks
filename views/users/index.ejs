@@ -9,11 +9,15 @@
   <body>
    
     <%- include('../partials/_navbar.ejs') %>
-   
+    <div class="browse-container">
+    <h1>Browse other libraries</h1>
+    <div class="browse-buttons">
     <ul>
         <% users.forEach(communityUser => { %>
             <li><a href="/users/<%= user._id %>/users/<%= communityUser._id %>"><%= communityUser.username %></a></li>
           <% }) %>
       </ul>
+    </div>
+</div>
   </body>
 </html>

@@ -57,6 +57,13 @@ body {
     justify-content: center;
     gap: 15px;  /* Center vertically */
 }
+
+.user-books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
   
 .auth-links {
     display: flex;
@@ -103,7 +110,7 @@ body {
   /* sign in and sign up styling */
   .signin-container,
 .signup-container {
-  background-color: #F6C900;
+  background-color: #9ac2ef;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +120,7 @@ body {
 }
 
 h1 {
-  color: #1c2e5b;
+  color: darkred;
   font-size: 300%;
   margin-bottom: 10px;
 }
@@ -127,6 +134,43 @@ h1 {
     text-align: center;
     margin-bottom: 0px;
     
+}
+
+.browse-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.browse-buttons ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.browse-buttons ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.browse-buttons ul li a {
+    text-decoration: none;
+    color: #1c2e5b;
+    background-color: #f6e7e7;
+    border-radius: 30px;
+    padding: 12px 24px; /* Adjust padding for better spacing */
+    margin: 5px 0; /* Small margin for spacing */
+    font-weight: bold;
+    font-size: 1.3em; /* Increase font size */
+    text-align: center;
+    display: inline-block; /* Ensures proper button behavior */
+    min-width: 150px; /* Keep buttons a reasonable size */
+    max-width: 250px; /* Prevent buttons from being too wide */
 }
 
 form {
@@ -180,14 +224,13 @@ button {
     margin: 0;
     width: 50%;
     flex-grow: 0;
-    align-self: flex-start;
+    /* align-self: flex-start; */
   }
 
   .bookshelf-image {
     max-width: 40%;
     height: auto;
     border-radius: 15px;
-    /* margin-left: auto; */
     display: block;
     flex-shrink: 0;  
   }
@@ -202,7 +245,7 @@ button {
   }
 
   h1 {
-    color: rgb(226, 103, 22);
+    color: rgb(241, 146, 29);
   }
   
   .add-book-link {
