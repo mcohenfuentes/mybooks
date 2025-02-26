@@ -206,7 +206,7 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50%;
   }
   
   .new-body > form,
@@ -230,5 +230,5 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50%;
   }
