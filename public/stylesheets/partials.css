@@ -7,16 +7,16 @@
     align-items: center;
   }
   
-  #nav-header {
+  /* #nav-header {
     color: #ce4866;
     size: 1em !important;
     margin: 0;
-  }
+  } */
   
   .authlink {
     text-decoration: none;
     margin: 0 15px;
-    color: #4b598e;
+    color: darkred;
     font-weight: bold;
   }
   

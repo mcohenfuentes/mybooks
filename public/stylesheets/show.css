@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: #9ac2ef;
+    background-color: lightskyblue;
   }
   
   .show-body {
@@ -19,25 +19,28 @@ body {
   
   .show-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
   
-  .show-header > h1 {
+   h1 {
     color: #1c2e5b;
     font-size: 3.4em;
-    margin-left: 10px;
-  }
+    margin: 0;
+  } 
   
   .show-actions {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 20px 0 0 30px;
+    margin: 20px 0 0 0;
   }
   
   button {
@@ -65,7 +68,7 @@ body {
     width: 10em;
     text-align: center;
     margin: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
   }
   
   .show-actions > a:hover {
@@ -76,13 +79,13 @@ body {
     color: #ce4866;
     font-weight: bold;
     font-size: 1.4em;
-    margin: 10px 30px;
+    margin: 10px 30px 10px 8px;
     text-align: center;
   }
   
   .show-notes-container {
     width: 90%;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
   
   .show-notes-container > a {
@@ -101,7 +104,7 @@ body {
     background-color: #f6e7e7;
     width: 85%;
     border-radius: 20px;
-    padding: 40px 40px 20px 40px;
+    padding: 12px 40px 17px 19px;
     margin: 20px 10px;
   }
   

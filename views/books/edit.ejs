@@ -11,7 +11,7 @@
 
 <body>
     <%- include('../partials/_navbar.ejs') %>
-        <h1>Edit <%= book.title %></h1>
+        <h1 class="edit-header">Edit <%= book.title %></h1>
         <div class="edit-body">
         <form action="/users/<%= user._id %>/books/<%= book._id %>?_method=PUT"
     method="POST">

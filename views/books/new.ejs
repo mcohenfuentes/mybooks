@@ -8,7 +8,7 @@
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1>Add a New Book</h1>
+    <h1 class="edit-new">Add a New Book</h1>
     <div class="new-body">
     <form action="/users/<%= user._id %>/books" method="POST">
         <label for="title">Title:</label>

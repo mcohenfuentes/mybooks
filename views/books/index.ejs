@@ -13,6 +13,7 @@
     <h1>Your Books</h1>
     <a class="add-book-link" href="/users/<%=user._id%>/books/new">Add a Book</a>
 </div>
+<div class="book-container">
     <ul>
         <% books.forEach((book)=>{ %>
         <li>
@@ -22,6 +23,8 @@
         </li>
         <% }) %>
       </ul>
+      <img src= "https://cdn.pixabay.com/photo/2015/05/04/09/41/france-752123_1280.jpg" alt="Bookshelf" class="bookshelf-image">
+    </div>
     </div>
   </body>
 </html>
