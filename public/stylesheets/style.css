@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* 🌍 GLOBAL STYLES */
 body {
     font-family: 'Quicksand', sans-serif;
     height: 100vh;
@@ -9,8 +10,14 @@ body {
     overflow: hidden; /* Prevents scrolling */
 }
 
-  /* public/stylesheets/style.css */
+h1 {
+    color: darkred;
+    font-size: 300%;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
 
+/* 🏠 HOMEPAGE */
 .index-body {
     background-image: url('https://cdn.pixabay.com/photo/2021/01/21/15/54/books-5937716_1280.jpg');
     background-repeat: no-repeat;
@@ -23,278 +30,118 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .main-header {
-    font-weight: bold;
-    color: #135484;
-    font-size: 100px;
-    margin: 0;  
-    top: 10%;
-    position: static;
-    line-height: 1;              
 }
-  
-.subheader {
-    margin: 10px 0 0 0;  
-    color: #135484;    
-    font-size: 50px;
-    line-height: 1.2;
-}
-  
-  .index-container {
+
+.index-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px; /* Space between elements */
     margin-top: -300px;
-  }
-
-  .text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* Center horizontally */
-    justify-content: center;
-    gap: 15px;  /* Center vertically */
 }
 
-.user-books {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers everything horizontally */
-    justify-content: center;
-    text-align: center; /* Ensures text inside is centered */
-    gap: 20px; /* Adds space between elements */
-    margin-top: 50px; /* Moves everything down a bit */
-}
-
-.user-books h1 {
-    font-size: 2.5em; /* Adjust size if needed */
-    color: darkred;
-    margin-bottom: 15px; /* Space below header */
-}
-
-.user-books ul {
-    list-style: none; /* Removes bullet points */
-    padding: 0;
-    text-align: center;
-}
-
-.user-books ul li {
-    margin-bottom: 10px; /* Space between buttons */
-}
-
-.user-books ul li a {
-    text-decoration: none;
-    color: #1c2e5b;
-    background-color: #f6e7e7;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 1.3em;
-    font-weight: bold;
-    display: inline-block; /* Makes sure it behaves like a button */
-    min-width: 200px; /* Ensures uniform button size */
-    text-align: center;
-}
-
-.user-books ul li a:hover {
-    background-color: #4b598e;
-}
-
-.user-books a {
-    text-decoration: none;
-    color: white;
-    background-color: #B14332;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 20px; /* Adds space above */
-    display: inline-block; /* Ensures it behaves like a button */
-}
-
-.user-books a:hover {
-    background-color: #4a55e8;
-}
-  
-.auth-links {
-    display: flex;
-    flex-direction: row;  /* Horizontal alignment */
-    justify-content: center;
-    gap: 20px;  /* Space between buttons */
-    margin-top: 10px; 
-    align-items: center; 
-}
-  
-.signup-link,
-.signin-link {
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 10px 20px;
-    border-radius: 25px;
-    width: 150px; /* Fixed width for consistent button size */
-    text-align: center;
-    transition: background-color 0.3s ease;
-    border: none;
-    display: inline-block;
-}
-  
-  .signup-link {
-    background-color: #030367;
-    color: white;
-    margin: 20 0 0px 0;
-  }
-  
-  .signup-link:hover {
-    background-color: lightskyblue;
-  }
-  
-  .signin-link {
-    background-color: rgb(171, 9, 9);
-    color: white;
-    margin: 1px 0 0 0;
-  }
-  
-  .signin-link:hover {
-    background-color: darkorange;
-  }
-  
-  /* sign in and sign up styling */
-  .signin-container,
-.signup-container {
-  background-color: lightskyblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-h1 {
-  color: darkred;
-  font-size: 300%;
-  margin-bottom: 10px;
-}
-
-.edit-header {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.edit-new {
-    text-align: center;
-    margin-bottom: 0px;
-    
-}
-
-.browse-container {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  
-}
-
-.browse-image {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.bottom-image {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
-.browse-image img {
-    max-width: 60%;
+.bottom-image img {
+    max-width: 100%;
     height: auto;
-    border-radius: 15px;
 }
 
-.browse-buttons ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
+/* 📖 YOUR BOOKS PAGE */
+.all-books-body {
+    display: flex;
+    justify-content: flex-start; /* Align everything to the left */
+    align-items: flex-start; /* Align items to the top */
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 50px;
+}
+
+.all-books-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Space between buttons */
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.browse-buttons ul li {
-    width: 100%;
+.book-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    /* flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px;  */
+}
+
+.left-book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-container ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
 }
 
-.browse-buttons ul li a {
+.book-container ul li a {
     text-decoration: none;
     color: #1c2e5b;
     background-color: #f6e7e7;
+    padding: 12px 24px;
     border-radius: 30px;
-    padding: 12px 24px; /* Adjust padding for better spacing */
-    margin: 5px 0; /* Small margin for spacing */
+    font-size: 1.3em;
     font-weight: bold;
-    font-size: 1.3em; /* Increase font size */
+    display: inline-block;
+    min-width: 200px;
     text-align: center;
-    display: inline-block; /* Ensures proper button behavior */
-    min-width: 150px; /* Keep buttons a reasonable size */
-    max-width: 250px; /* Prevent buttons from being too wide */
+    margin-bottom: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 20em;
-  height: 30%;
-  background-color: #f6e7e7;
-  padding: 30px 40px 20px 40px;
-  border-radius: 30px;
-  color: #4b598e;
-  font-weight: bold;
+.book-container ul li a:hover {
+    background-color: #4b598e;
+    color: white;
 }
 
-input {
-  border: 1px solid rgb(182, 182, 182);
-  padding: 8px;
-  border-radius: 10px;
+/* 📌 ADD A BOOK BUTTON */
+.add-book-link {
+    padding: 12px 20px;
+    background-color: #B14332;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px; /* Space between book list and button */
 }
 
-button {
-  padding: 10px;
-  background-color: #B14332;
-  color: white;
-  border-radius: 30px;
-  border: none;
-  margin: 15px 0;
-  font-size: 1.1em;
+.add-book-link:hover {
+    background-color: #4a55e8;
 }
 
+/* 📚 BOOKSHELF IMAGE */
+.your-books-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    flex-shrink: 0;
+}
 
-/* /styling for books/index  */
-
-.all-books-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 5%;
-    width: 90%;
-  }
-
-  .book-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 50%;
-    flex-grow: 0;
-    /* align-self: flex-start; */
-  }
-
-  .add-book-container {
+/* ➕ ADD A NEW BOOK PAGE */
+.add-book-container {
     display: flex;
     flex-direction: row; 
     justify-content: space-between; 
@@ -314,9 +161,8 @@ button {
 }
 
 .add-book-content h1 {
-    text-align: left; 
-    margin-bottom: 20px; 
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .add-book-content form {
@@ -326,6 +172,7 @@ button {
     align-items: right;
 }
 
+/* 📷 ADD BOOK IMAGE */
 .add-book-image {
     width: 50%; 
     display: flex;
@@ -339,107 +186,96 @@ button {
     height: auto;
     border-radius: 10px; 
     margin-top: 110px;
-
 }
 
-  .your-books-image {
-    max-width: 40%; 
-    height: auto;
-    border-radius: 15px;
-    display: block;
-    flex-shrink: 0;
+/* 📂 SIGN IN & SIGN UP PAGE */
+.signin-container,
+.signup-container {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-  .all-books-header {
+/* 👤 AUTH LINKS */
+.auth-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    width: 90%;
-  }
+    justify-content: center;
+    gap: 20px;  
+    margin-top: 10px; 
+    align-items: center; 
+}
 
-  h1 {
-    color: #030367;
-  }
-  
-  .add-book-link {
-    padding: 5px;
-    background-color: #ca2909;
-    color: white;
-    border-radius: 30px;
-    border: none;
-    font-size: 1.2em;
-    padding: 6px 25px;
+.signup-link,
+.signin-link {
     text-decoration: none;
-    margin-top: 35px;
-  }
-  
-  .add-book-link:hover {
-    background-color: #4a55e8;
-  }
-
-
-  ul li a {
-    text-decoration: none;
-    color: #1c2e5b;
-    width: 80%;
-    background-color: #f6e7e7;
-    border-radius: 30px;
+    font-size: 1.5em;
     padding: 10px 20px;
-    margin: 0 0 15px 0;
-    font-weight: bold;
+    border-radius: 25px;
+    width: 150px;
     text-align: center;
-    display: block; 
-  }
+    transition: background-color 0.3s ease;
+    border: none;
+    display: inline-block;
+}
 
-
-ul li a:hover {
-    background-color: #4b598e;
+.signup-link {
+    background-color: #030367;
     color: white;
-  }
+    margin: 20 0 0px 0;
+}
 
-  .new-body {
+.signup-link:hover {
+    background-color: lightskyblue;
+}
+
+.signin-link {
+    background-color: rgb(171, 9, 9);
+    color: white;
+    margin: 1px 0 0 0;
+}
+
+.signin-link:hover {
+    background-color: darkorange;
+}
+
+/* ✏️ EDIT & FORM STYLES */
+.edit-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.edit-new {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.new-body, .edit-body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: auto;
     gap: 15px;
-  }
+}
 
-  .bottom-image {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .bottom-image img{
-    max-width: 100%;
-    height: auto;
-  }
-  .new-body > form,
-  .edit-body > form {
+.new-body > form,
+.edit-body > form {
     height: 70%;
-  }
-  
-  textarea,
-  select {
+}
+
+textarea,
+select {
     border: 1px solid rgb(182, 182, 182);
     border-radius: 10px;
     padding: 10px;
-  }
-  
-  select {
+}
+
+select {
     margin-bottom: 10px;
-  }
-  
-  .edit-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: auto;
-    gap: 15px;
-  }
+}
+
