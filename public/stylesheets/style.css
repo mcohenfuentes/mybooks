@@ -27,7 +27,7 @@ body {
   
   .main-header {
     font-weight: bold;
-    color: white;
+    color: #030367;
     font-size: 100px;
     margin: 0;  
     top: 10%;
@@ -36,7 +36,8 @@ body {
 }
   
 .subheader {
-    margin: 10px 0 0 0;       /* Small margin above the subheader */
+    margin: 10px 0 0 0;  
+    color: #030367;    
     font-size: 50px;
     line-height: 1.2;
 }
