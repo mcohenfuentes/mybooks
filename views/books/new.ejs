@@ -8,6 +8,8 @@
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
+    <div class="add-book-container">
+        <div class="add-book-content">
     <h1 class="edit-new">Add a New Book</h1>
     <div class="new-body">
     <form action="/users/<%= user._id %>/books" method="POST">
@@ -27,8 +29,10 @@
         <button type="submit">Add Book</button>
       </form>
     </div>
-    <div class="bottom-image">
-        <img src="https://cdn.pixabay.com/photo/2016/03/16/13/54/books-1260734_640.jpg" alt="opened up book">
+</div>
+    <div class="add-book-image">
+        <img src="https://cdn.pixabay.com/photo/2012/11/23/06/11/book-67049_1280.jpg" alt="bookshelf">
+    </div>
     </div>
   </body>
 </html>

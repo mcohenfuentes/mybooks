@@ -4,7 +4,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     height: 100vh;
     width: 100vw;
-    background-color: #9ac2ef;
+    background-color: lightskyblue;
     margin: 0; /* Removes default body margin */
     overflow: hidden; /* Prevents scrolling */
 }
@@ -27,7 +27,7 @@ body {
   
   .main-header {
     font-weight: bold;
-    color: #030367;
+    color: #135484;
     font-size: 100px;
     margin: 0;  
     top: 10%;
@@ -37,7 +37,7 @@ body {
   
 .subheader {
     margin: 10px 0 0 0;  
-    color: #030367;    
+    color: #135484;    
     font-size: 50px;
     line-height: 1.2;
 }
@@ -62,8 +62,60 @@ body {
 .user-books {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+    align-items: center; /* Centers everything horizontally */
+    justify-content: center;
+    text-align: center; /* Ensures text inside is centered */
+    gap: 20px; /* Adds space between elements */
+    margin-top: 50px; /* Moves everything down a bit */
+}
+
+.user-books h1 {
+    font-size: 2.5em; /* Adjust size if needed */
+    color: darkred;
+    margin-bottom: 15px; /* Space below header */
+}
+
+.user-books ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    text-align: center;
+}
+
+.user-books ul li {
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+.user-books ul li a {
+    text-decoration: none;
+    color: #1c2e5b;
+    background-color: #f6e7e7;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block; /* Makes sure it behaves like a button */
+    min-width: 200px; /* Ensures uniform button size */
+    text-align: center;
+}
+
+.user-books ul li a:hover {
+    background-color: #4b598e;
+}
+
+.user-books a {
+    text-decoration: none;
+    color: white;
+    background-color: #B14332;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px; /* Adds space above */
+    display: inline-block; /* Ensures it behaves like a button */
+}
+
+.user-books a:hover {
+    background-color: #4a55e8;
 }
   
 .auth-links {
@@ -89,7 +141,7 @@ body {
 }
   
   .signup-link {
-    background-color: rgb(3, 3, 103);
+    background-color: #030367;
     color: white;
     margin: 20 0 0px 0;
   }
@@ -111,7 +163,7 @@ body {
   /* sign in and sign up styling */
   .signin-container,
 .signup-container {
-  background-color: #9ac2ef;
+  background-color: lightskyblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,6 +195,19 @@ h1 {
   align-items: center;
   text-align: center;
   
+}
+
+.browse-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.browse-image img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
 }
 
 .browse-buttons ul {
@@ -203,6 +268,7 @@ button {
   font-size: 1.1em;
 }
 
+
 /* /styling for books/index  */
 
 .all-books-body {
@@ -228,13 +294,61 @@ button {
     /* align-self: flex-start; */
   }
 
-  .bookshelf-image {
-    max-width: 40%;
+  .add-book-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 90%;
+    max-width: 1200px; 
+    margin: 40px auto; 
+    gap: 50px; 
+}
+
+.add-book-content {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; 
+}
+
+.add-book-content h1 {
+    text-align: left; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.add-book-content form {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.add-book-image {
+    width: 50%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.add-book-image img {
+    width: 90%; 
+    max-width: 500px; 
+    height: auto;
+    border-radius: 10px; 
+    margin-top: 110px;
+
+}
+
+  .your-books-image {
+    max-width: 40%; 
     height: auto;
     border-radius: 15px;
     display: block;
-    flex-shrink: 0;  
-  }
+    flex-shrink: 0;
+}
 
   .all-books-header {
     display: flex;
@@ -246,7 +360,7 @@ button {
   }
 
   h1 {
-    color: rgb(241, 146, 29);
+    color: #030367;
   }
   
   .add-book-link {
