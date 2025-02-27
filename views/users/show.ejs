@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>book stuff</title>
-  </head>
-  <body>
-    <%- include('../partials/_navbar.ejs') %>
-    <div class="user-books">
-    <h1><%= user.username %>'s Books</h1>
+</head>
 
-    <% if (books && books.length > 0) { %>
-        <ul>
-            <% books.forEach(book => { %>
-                <li>
-                    <a href="/users/<%=user.id%>/books/community/<%=user.id%>/<%=book.id%>"><%= book.title %></a>
-                </li> 
-            <% }) %>
-        </ul>
-    <% } else { %>
-        <p>No Books </p>
-    <% } %>
-    <a href="/">Back to My Books</a>
-</div>
-  </body>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+        <div class="book-container">
+            <div class="left-book-container">
+                <h1>
+                    <%= user.username %>'s Books
+                </h1>
+
+                <% if (books && books.length> 0) { %>
+                    <ul>
+                        <% books.forEach(book=> { %>
+                            <li>
+                                <a href="/users/<%=user.id%>/books/community/<%=user.id%>/<%=book.id%>">
+                                    <%= book.title %>
+                                </a>
+                            </li>
+                            <% }) %>
+                    </ul>
+                    <% } else { %>
+                        <p>No Books </p>
+                        <% } %>
+                            <a class="add-book-link" href="/">Back to My Books</a>
+            </div>
+            <img class="large-shelf" src="https://cdn.pixabay.com/photo/2020/06/06/14/35/books-5266801_1280.jpg"
+                    alt="a study with books">
+        </div>
+</body>
+
 </html>
