@@ -220,6 +220,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* 🖱️ Button Styling */
@@ -404,6 +405,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .edit-body form button {
