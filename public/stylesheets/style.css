@@ -357,29 +357,68 @@ h1 {
     background-color: darkorange;
 }
 
-/* ✏️ EDIT & FORM STYLES */
+
 .edit-header {
     text-align: center;
-    margin-bottom: 5px;
+    font-size: 3em;
+    color: blue;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.edit-new {
-    text-align: center;
-    margin-bottom: 0px;
-}
-
-.new-body, .edit-body {
+.edit-body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: auto;
     gap: 15px;
+    margin-top: 20px; /* Moves form down */
 }
 
-.new-body > form,
-.edit-body > form {
-    height: 70%;
+.edit-body form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 400px; /* Keeps form consistent */
+    background-color: #f6e7e7;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: #4b598e;
+    font-weight: bold;
+}
+
+.edit-body form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.edit-body form input,
+.edit-body form textarea,
+.edit-body form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.edit-body form button {
+    padding: 12px;
+    background-color: #B14332;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.edit-body form button:hover {
+    background-color: #4a55e8;
 }
 
 
