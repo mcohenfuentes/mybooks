@@ -13,7 +13,6 @@
         <div class="book-container">
             <div class="add-book-content">
                 <h1 class="edit-new">Add a New Book</h1>
-                <div class="new-body">
                     <form action="/users/<%= user._id %>/books" method="POST">
                         <label for="title">Title:</label>
                         <input type="text" name="title" id="title" />
@@ -30,7 +29,6 @@
                         </select>
                         <button type="submit">Add Book</button>
                     </form>
-                </div>
             </div>
             <div class="add-book-image">
                 <img src="https://cdn.pixabay.com/photo/2012/11/23/06/11/book-67049_1280.jpg" alt="bookshelf">
