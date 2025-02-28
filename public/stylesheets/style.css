@@ -188,11 +188,54 @@ h1 {
 }
 
 .add-book-content form {
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: center; /* Centers form elements */
+    text-align: left; /* Ensures labels align properly */
+    gap: 15px; /* Adds space between form elements */
+    background-color: #f6e7e7; /* Keeps original background */
+    padding: 30px; /* Adds spacing inside form */
+    border-radius: 20px; /* Keeps rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px; /* Prevents form from stretching too much */
 }
+
+/* 📝 Style Inputs and Labels */
+.add-book-content form label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-book-content form input,
+.add-book-content form textarea,
+.add-book-content form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+/* 🖱️ Button Styling */
+.add-book-content form button {
+    padding: 10px;
+    background-color: #B14332;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-book-content form button:hover {
+    background-color: #4a55e8;
+}
+
 
 /* 📷 ADD BOOK IMAGE */
 .add-book-image {
@@ -205,9 +248,9 @@ h1 {
 .add-book-image img {
     width: 90%; 
     max-width: 500px; 
-    height: auto;
-    border-radius: 10px; 
-    margin-top: 110px;
+    height: 420px;
+    border-radius: 15px; 
+    margin-top: 80px;
 }
 
 /* 📂 SIGN IN & SIGN UP PAGE */
