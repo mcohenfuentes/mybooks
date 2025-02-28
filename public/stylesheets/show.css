@@ -29,7 +29,7 @@ body {
   }
   
    h1 {
-    color: #1c2e5b;
+    color: blue;
     font-size: 3.4em;
     margin: 0;
   } 
@@ -59,7 +59,7 @@ body {
   }
   
   .show-actions > a {
-    background-color: #4b598e;
+    background-color: #030367;
     color: white;
     text-decoration: none;
     font-size: 1.1em;
@@ -76,7 +76,7 @@ body {
   }
   
   p {
-    color: #ce4866;
+    color: #303791;
     font-weight: bold;
     font-size: 1.4em;
     margin: 10px 30px 10px 8px;

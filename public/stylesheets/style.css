@@ -41,6 +41,11 @@ h1 {
     margin-top: -300px;
 }
 
+.text-container {
+    color: blue;
+    font-size: 150%;
+}
+
 .bottom-image {
     position: absolute;
     bottom: 0;
@@ -118,6 +123,15 @@ h1 {
 .book-container ul li a:hover {
     background-color: #4b598e;
     color: white;
+}
+
+.browse-image img {
+    width: 100%; /* Ensures it scales properly */
+    margin-top: 80px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    display: block;
+    flex-shrink: 0;
 }
 
 /* 📌 ADD A BOOK BUTTON */
