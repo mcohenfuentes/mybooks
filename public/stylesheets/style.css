@@ -155,11 +155,13 @@ h1 {
 
 /* 📚 BOOKSHELF IMAGE */
 .your-books-image {
-    max-width: 40%;
+    max-width: 60%; /* Increase image size */
     height: auto;
-    border-radius: 15px;
+    border-radius: 20px; /* Increase rounded corners */
     display: block;
     flex-shrink: 0;
+    margin-top: 90px; /* Move the image down */
+    align-self: flex-end; /* Moves image lower in its container */
 }
 
 /* ➕ ADD A NEW BOOK PAGE */
