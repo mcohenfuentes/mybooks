@@ -7,6 +7,7 @@ const bookSchema = new mongoose.Schema({
   },
   notes: {
     type: String,
+    required: true,
   },
   status: {
     type: String,

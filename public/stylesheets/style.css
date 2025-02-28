@@ -193,13 +193,13 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers form elements */
-    text-align: left; /* Ensures labels align properly */
-    gap: 15px; /* Adds space between form elements */
-    background-color: #f6e7e7; /* Keeps original background */
-    padding: 30px; /* Adds spacing inside form */
-    border-radius: 20px; /* Keeps rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    align-items: center; 
+    text-align: left; 
+    gap: 15px; 
+    background-color: #f6e7e7; 
+    padding: 30px; 
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     max-width: 400px; 
 }
 
@@ -271,11 +271,11 @@ h1 {
 .signup-container form {
     display: flex;
     flex-direction: column;
-    background-color: white; /* Ensure contrast */
+    background-color: white; 
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Prevents stretching */
+    width: 300px; 
     align-items: center;
     text-align: center;
 }
@@ -373,14 +373,14 @@ h1 {
     align-items: center;
     height: auto;
     gap: 15px;
-    margin-top: 20px; /* Moves form down */
+    margin-top: 20px; 
 }
 
 .edit-body form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 400px; /* Keeps form consistent */
+    width: 400px; 
     background-color: #f6e7e7;
     padding: 30px 40px;
     border-radius: 15px;
