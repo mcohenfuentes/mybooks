@@ -7,9 +7,8 @@
 I love books and wanted to create a place where I could catalog the books I have read. I also wanted to have a community aspect to the app so that others can join and add their books and we can all be inspired my each others libraries! 
 
 ## 📖 Getting Started
-### Play the Game Here:
-* 📍 [My Trello Board](https://trello.com/b/a3mDTGTr/my-book-project)
-* 📍 [Deployed Game](https://a-book-place-app-6c63ea900557.herokuapp.com/)
+* [My Trello Board](https://trello.com/b/a3mDTGTr/my-book-project)
+* [Deployed Game](https://a-book-place-app-6c63ea900557.herokuapp.com/)
 
 
 ## 🔗 Attributions 
