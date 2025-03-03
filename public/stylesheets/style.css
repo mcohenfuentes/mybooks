@@ -424,4 +424,38 @@ h1 {
     background-color: #4a55e8;
 }
 
+@media screen and (max-width: 900px) {
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-book-container {
+        align-items: center;
+    }
+
+    .your-books-image {
+        max-width: 70%;
+    }
+
+    .add-book-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-book-content {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
