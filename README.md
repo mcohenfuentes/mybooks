@@ -1,7 +1,7 @@
 ![Screenshot of game](https://i.imgur.com/CdU3POj.png)
 
 # About 📚 A Book Place App ✨ 
-**A Book Place** is a place for book enthusiasts to store information about the books they have read. A user can login add to their list of books, edit the status of a book, and leave notes on the book. A user can also check what other users in the community are reading and see what they said about their books. 
+**A Book Place** is a place for book enthusiasts to store information about the books they have read. A user can login add to their list of books, edit the status of a book, and leave notes on the book. A user can also check what other users in the community are reading and see what other users said about their books. 
 
 ## Why This App?
 I love books and wanted to create a place where I could catalog the books I have read. I also wanted to have a community aspect to the app so that others can join and add their books and we can all be inspired my each others libraries! 
