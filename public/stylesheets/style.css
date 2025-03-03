@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-/* 🌍 GLOBAL STYLES */
 body {
     font-family: 'Quicksand', sans-serif;
     height: 100vh;
     width: 100vw;
     background-color: lightskyblue;
-    margin: 0; /* Removes default body margin */
-    overflow: hidden; /* Prevents scrolling */
+    margin: 0; 
+    overflow: hidden; 
 }
 
 h1 {
@@ -17,7 +16,6 @@ h1 {
     margin-top: 0;
 }
 
-/* 🏠 HOMEPAGE */
 .index-body {
     background-image: url('https://cdn.pixabay.com/photo/2021/01/21/15/54/books-5937716_1280.jpg');
     background-repeat: no-repeat;
@@ -37,7 +35,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Space between elements */
+    gap: 10px; 
     margin-top: -300px;
 }
 
@@ -58,11 +56,11 @@ h1 {
     height: auto;
 }
 
-/* 📖 YOUR BOOKS PAGE */
+
 .all-books-body {
     display: flex;
-    justify-content: flex-start; /* Align everything to the left */
-    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; 
+    align-items: flex-start; 
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
@@ -126,15 +124,15 @@ h1 {
 }
 
 .browse-image img {
-    width: 100%; /* Ensures it scales properly */
+    width: 100%; 
     margin-top: 80px;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Rounded corners */
+    height: auto;
+    border-radius: 15px; 
     display: block;
     flex-shrink: 0;
 }
 
-/* 📌 ADD A BOOK BUTTON */
+
 .add-book-link {
     padding: 12px 20px;
     background-color: #B14332;
@@ -146,25 +144,25 @@ h1 {
     font-weight: bold;
     display: inline-block;
     text-align: center;
-    margin-top: 20px; /* Space between book list and button */
+    margin-top: 20px; 
 }
 
 .add-book-link:hover {
     background-color: #4a55e8;
 }
 
-/* 📚 BOOKSHELF IMAGE */
+
 .your-books-image {
-    max-width: 60%; /* Increase image size */
+    max-width: 60%; 
     height: auto;
-    border-radius: 20px; /* Increase rounded corners */
+    border-radius: 20px;
     display: block;
     flex-shrink: 0;
-    margin-top: 90px; /* Move the image down */
-    align-self: flex-end; /* Moves image lower in its container */
+    margin-top: 90px; 
+    align-self: flex-end; 
 }
 
-/* ➕ ADD A NEW BOOK PAGE */
+
 .add-book-container {
     display: flex;
     flex-direction: row; 
@@ -223,7 +221,7 @@ h1 {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* 🖱️ Button Styling */
+
 .add-book-content form button {
     padding: 10px;
     background-color: #B14332;
@@ -241,7 +239,7 @@ h1 {
 }
 
 
-/* 📷 ADD BOOK IMAGE */
+
 .add-book-image {
     width: 50%; 
     display: flex;
@@ -257,7 +255,7 @@ h1 {
     margin-top: 80px;
 }
 
-/* 📂 SIGN IN & SIGN UP PAGE */
+
 .signin-container,
 .signup-container {
     background-color: lightskyblue;
@@ -316,7 +314,7 @@ h1 {
 .signup-container form button:hover {
     background-color: #4a55e8;
 }
-/* 👤 AUTH LINKS */
+
 .auth-links {
     display: flex;
     flex-direction: row;

@@ -108,7 +108,7 @@ router.get('/', async (req, res) => {
     }
   });
 
-//'/users/:userId/books/community/:userId/:bookId'
+
   router.get('/community/:userId/:bookId', async (req, res) => {
     try {
         console.log(req.params)
